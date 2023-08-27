@@ -1,7 +1,7 @@
 import * as C from './style';
-
-import { NavLocation } from '../../components/NavLocation';
 import { FaHouseUser } from 'react-icons/fa';
+import { NavLocation } from '../../components/NavLocation';
+import { Cards } from '../../components/Cards';
 
 export const ControlPage = () => {
     return (
@@ -11,20 +11,7 @@ export const ControlPage = () => {
                     icon={<FaHouseUser color={"9CA3AF"} size={15}/>}
                     position={["Control Panel", "DashBoard"]}
                 />
-                <C.CardContainer>
-                    <C.Card>
-                        ...
-                    </C.Card>
-                    <C.Card>
-                        ...
-                    </C.Card>
-                    <C.Card>
-                        ...
-                    </C.Card>
-                    <C.Card>
-                        ...
-                    </C.Card>
-                </C.CardContainer>
+                <Cards/>
             </C.Content>
         </C.Container>
     )
