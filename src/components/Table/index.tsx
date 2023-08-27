@@ -11,9 +11,9 @@ export const Table = () => {
             date: "May 20, 2023 10:12:15",
             amount: "120$",
             status: <Badge
-                color={"#10B981"}
+                color={"#59FF35"}
                 text={"Completed"}
-                icon={<AiFillCheckCircle color={"10B981"} size={14}/>}
+                icon={<AiFillCheckCircle color={"59FF35"} size={14}/>}
             />
         },
         {
