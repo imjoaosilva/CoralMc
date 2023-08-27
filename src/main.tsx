@@ -1,7 +1,15 @@
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import { RouteList } from './router/route';
+import {BrowserRouter} from 'react-router-dom';
+import { Container } from './global/style';
 import './global/global.css';
+import { SideBar } from './components/SideBar';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <App />
+  <Container>
+    <SideBar/>
+    <BrowserRouter>
+      <RouteList/>
+    </BrowserRouter>
+  </Container>
 )
