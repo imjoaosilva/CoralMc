@@ -24,6 +24,12 @@ export const Card = styled.div`
     }
 
     margin-bottom: 30px;
+
+    @media (max-width: 968px) {
+        width: 100%;
+        height: 90px;
+        padding: 5px;
+    }
 `
 
 export const CardText = styled.h1`
@@ -34,6 +40,10 @@ export const CardText = styled.h1`
     align-items: center;
     gap: 10px;
     text-wrap: nowrap;
+
+    @media (max-width: 968px) {
+        font-size: 17px;
+    }
 `
 
 export const CardValue = styled.h2`
@@ -41,6 +51,10 @@ export const CardValue = styled.h2`
     font-size: 36px;
     color: white;
     font-weight: bold;
+
+    @media (max-width: 968px) {
+        font-size: 26px;
+    }
 `
 
 export const CardFooter = styled.p`

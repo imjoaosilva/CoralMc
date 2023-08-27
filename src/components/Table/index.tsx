@@ -30,45 +30,47 @@ export const Table = () => {
     ]
 
     return (
-        <C.Table>
-            <C.TableHeader>
-                <C.TableHeaderItem>
-                    ID
-                </C.TableHeaderItem>
-                <C.TableHeaderItem>
-                    USERNAME
-                </C.TableHeaderItem>
-                <C.TableHeaderItem>
-                    DATE & TIME
-                </C.TableHeaderItem>
-                <C.TableHeaderItem>
-                    AMOUNT
-                </C.TableHeaderItem>
-                <C.TableHeaderItem>
-                    STATUS
-                </C.TableHeaderItem>    
-            </C.TableHeader>
-            <C.TableBody>
-                {TableValues.map((item, index) => (
-                    <C.TableBodyRow key={index}>
-                        <C.TableBodyItem>
-                            {item.id}
-                        </C.TableBodyItem>
-                        <C.TableBodyItem>
-                            {item.username}
-                        </C.TableBodyItem>
-                        <C.TableBodyItem className='date'>
-                            {item.date}
-                        </C.TableBodyItem>
-                        <C.TableBodyItem>
-                            {item.amount}
-                        </C.TableBodyItem>
-                        <C.TableBodyItem>
-                            {item.status}
-                        </C.TableBodyItem>
-                    </C.TableBodyRow>
-                ))}
-            </C.TableBody>
-        </C.Table>
+        <C.Container>
+            <C.Table>
+                <C.TableHeader>
+                    <C.TableHeaderItem>
+                        ID
+                    </C.TableHeaderItem>
+                    <C.TableHeaderItem>
+                        USERNAME
+                    </C.TableHeaderItem>
+                    <C.TableHeaderItem>
+                        DATE & TIME
+                    </C.TableHeaderItem>
+                    <C.TableHeaderItem>
+                        AMOUNT
+                    </C.TableHeaderItem>
+                    <C.TableHeaderItem>
+                        STATUS
+                    </C.TableHeaderItem>    
+                </C.TableHeader>
+                <C.TableBody>
+                    {TableValues.map((item, index) => (
+                        <C.TableBodyRow key={index}>
+                            <C.TableBodyItem>
+                                {item.id}
+                            </C.TableBodyItem>
+                            <C.TableBodyItem>
+                                {item.username}
+                            </C.TableBodyItem>
+                            <C.TableBodyItem className='date'>
+                                {item.date}
+                            </C.TableBodyItem>
+                            <C.TableBodyItem>
+                                {item.amount}
+                            </C.TableBodyItem>
+                            <C.TableBodyItem>
+                                {item.status}
+                            </C.TableBodyItem>
+                        </C.TableBodyRow>
+                    ))}
+                </C.TableBody>
+            </C.Table>
+        </C.Container>
     )
 }

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 interface SideBarListItemProps {
     active?: boolean;
-    dropdown?: boolean;
 }
 
 export const Container = styled.div`
@@ -13,6 +12,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+
+    @media (max-width: 688px) {
+        display: none;
+    }
 `
 
 export const SideBarTitle = styled.h1`
@@ -30,6 +33,10 @@ export const SideBarList = styled.ul`
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
+
+    &:last-child {
+        margin-top: 0px;
+    }
 `
 
 export const SideBarListItem = styled.li<SideBarListItemProps>`
@@ -58,8 +65,10 @@ export const SideBarListItem = styled.li<SideBarListItemProps>`
             opacity: 1;
         }
     `}
+`
 
-    ${props => props.dropdown && `
-        padding: 7px 20px;
-    `}
+export const Separator = styled.div`
+    width: 100%;
+    height: 3px;
+    background-color: #232E3B;
 `

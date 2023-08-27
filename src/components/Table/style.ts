@@ -1,11 +1,30 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    overflow-x: auto;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #1F2A37;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #4B5563;
+        border-radius: 5px;
+    }
+
+`
+
 export const Table = styled.table`
     background-color: #374151;
     margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px;
 `
 
 export const TableHeader = styled.thead`

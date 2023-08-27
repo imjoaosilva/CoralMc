@@ -32,6 +32,9 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    user-select: none;
+    -webkit-user-select: none;
 `
 
 export const Content = styled.div`
@@ -68,3 +71,7 @@ export const Arrow = styled.div<DropDownProps>`
     `}
     
 `
+
+export const DropDownContainer = styled.div`
+    padding: 0px 13px;
+`   

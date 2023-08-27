@@ -15,11 +15,7 @@ export const DropDown = ({title, icon, children} :DropDownProps) => {
     return (
         <C.Container>
             <C.Content>
-                <C.DropDownListItem
-                    onClick={() => {
-                        setIsOpen(!isOpen)
-                    }}
-                >
+                <C.DropDownListItem>
                     {icon}
                     {title}
                 </C.DropDownListItem>
@@ -35,9 +31,9 @@ export const DropDown = ({title, icon, children} :DropDownProps) => {
                 </C.Arrow>
             </C.Content>
             {isOpen && (
-                <>
+                <C.DropDownContainer>
                     {children}
-                </>
+                </C.DropDownContainer>
             )}
 
         </C.Container>
