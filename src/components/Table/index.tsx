@@ -26,7 +26,62 @@ export const Table = () => {
                 text={"Pending"}
                 icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
             />
-        }
+        },
+        {
+            id: 1331,
+            username: "Z4",
+            date: "May 15, 2023 10:12:25",
+            amount: "120$",
+            status: <Badge
+                color={"#E9BF1A"}
+                text={"Pending"}
+                icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
+            />
+        },
+        {
+            id: 1331,
+            username: "Z4",
+            date: "May 15, 2023 10:12:25",
+            amount: "120$",
+            status: <Badge
+                color={"#E9BF1A"}
+                text={"Pending"}
+                icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
+            />
+        },
+        {
+            id: 1331,
+            username: "Z4",
+            date: "May 15, 2023 10:12:25",
+            amount: "120$",
+            status: <Badge
+                color={"#E9BF1A"}
+                text={"Pending"}
+                icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
+            />
+        },
+        {
+            id: 1331,
+            username: "Z4",
+            date: "May 15, 2023 10:12:25",
+            amount: "120$",
+            status: <Badge
+                color={"#E9BF1A"}
+                text={"Pending"}
+                icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
+            />
+        },
+        {
+            id: 1331,
+            username: "Z4",
+            date: "May 15, 2023 10:12:25",
+            amount: "120$",
+            status: <Badge
+                color={"#E9BF1A"}
+                text={"Pending"}
+                icon={<AiFillClockCircle color={"E9BF1A"} size={14}/>}
+            />
+        },
     ]
 
     return (

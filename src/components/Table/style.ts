@@ -1,22 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    overflow-x: auto;
+    overflow: auto;
     width: 100%;
-
-    &::-webkit-scrollbar {
-        height: 5px;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: #1F2A37;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #4B5563;
-        border-radius: 5px;
-    }
-
+    max-height: 500px;
+    padding-right: 2px;
+    overflow-y: auto;
 `
 
 export const Table = styled.table`
