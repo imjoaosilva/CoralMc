@@ -4,7 +4,11 @@ interface SideBarListItemProps {
     active?: boolean;
 }
 
-export const Container = styled.div`
+interface MobileSideBarProps {
+    isOpen: boolean;
+}
+
+export const Container = styled.div<MobileSideBarProps>`
     width: 300px;
     height: 100%;
     background-color: #1F2A37;
@@ -15,7 +19,16 @@ export const Container = styled.div`
 
     @media (max-width: 688px) {
         display: none;
+        ${props => props.isOpen && `
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #1F2A37;
+            position: absolute;
+            z-index: 99;
+        `}
     }
+
 `
 
 export const SideBarTitle = styled.h1`
@@ -71,4 +84,25 @@ export const Separator = styled.div`
     width: 100%;
     height: 3px;
     background-color: #232E3B;
+`
+
+export const SideBarFooter = styled.div`
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+`
+
+export const MobileIcon = styled.div`
+
+    display: none;
+
+    @media (max-width: 688px) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        z-index: 999;
+    }
 `

@@ -10,6 +10,10 @@ export const Container = styled.div`
     justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
+
+    @media (max-width: 688px) {
+        display: none;
+    }
 `
 
 export const Text = styled.p`
