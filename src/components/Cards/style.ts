@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     flex-wrap: wrap;
 `
 
@@ -16,6 +16,14 @@ export const Card = styled.div`
     padding: 30px;
     flex-direction: column;
     outline: 1px solid #2A3342;
+    transition: all 0.2s linear;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    margin-bottom: 30px;
 `
 
 export const CardText = styled.h1`

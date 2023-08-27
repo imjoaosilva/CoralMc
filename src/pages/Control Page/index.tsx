@@ -2,6 +2,7 @@ import * as C from './style';
 import { FaHouseUser } from 'react-icons/fa';
 import { NavLocation } from '../../components/NavLocation';
 import { Cards } from '../../components/Cards';
+import { Table } from '../../components/Table';
 
 export const ControlPage = () => {
     return (
@@ -12,6 +13,7 @@ export const ControlPage = () => {
                     position={["Control Panel", "DashBoard"]}
                 />
                 <Cards/>
+                <Table/>
             </C.Content>
         </C.Container>
     )
