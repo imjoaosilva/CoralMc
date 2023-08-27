@@ -34,12 +34,13 @@ export const Card = styled.div`
 
 export const CardText = styled.h1`
     font-family: 'Inter', sans-serif;
-    font-size: 27px;
+    font-size: 25px;
     color: #D0D2D5;
     display: flex;
     align-items: center;
     gap: 10px;
     text-wrap: nowrap;
+    white-space: nowrap;
 
     @media (max-width: 968px) {
         font-size: 17px;
