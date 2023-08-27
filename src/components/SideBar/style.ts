@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface SideBarListItemProps {
     active?: boolean;
+    dropdown?: boolean;
 }
 
 export const Container = styled.div`
@@ -56,5 +57,9 @@ export const SideBarListItem = styled.li<SideBarListItemProps>`
         &:hover {
             opacity: 1;
         }
+    `}
+
+    ${props => props.dropdown && `
+        padding: 7px 20px;
     `}
 `

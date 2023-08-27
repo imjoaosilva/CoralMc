@@ -1,8 +1,9 @@
 import * as C from './style';
 import { useState } from 'react';
-import { FaHouseUser } from 'react-icons/fa';
+import { FaHouseUser, FaUserEdit } from 'react-icons/fa';
 import { MdFunctions } from 'react-icons/md';
 import { MdOutlineScience } from 'react-icons/md';
+import { DropDown } from '../DropDown';
 
 export const SideBar = () => {
     const [active, setActive] = useState(0);
@@ -29,15 +30,21 @@ export const SideBar = () => {
                     <MdFunctions color={"9CA3AF"} size={17}/>
                     Variables
                 </C.SideBarListItem>
-                <C.SideBarListItem 
-                    active={active == 2 ? true : false}
-                    onClick={() => {
-                        setActive(2);
-                    }}
+                <DropDown
+                    icon={<MdOutlineScience color={"9CA3AF"} size={17}/>}
+                    title='Settings'
                 >
-                    <MdOutlineScience color={"9CA3AF"} size={17}/>
-                    Settings
-                </C.SideBarListItem>
+                    <C.SideBarListItem 
+                        dropdown={true}
+                        active={active == 2 ? true : false}
+                        onClick={() => {
+                            setActive(2);
+                        }}
+                    >
+                        <FaUserEdit color={"9CA3AF"} size={17}/>
+                        Accounts
+                    </C.SideBarListItem>
+                </DropDown>
             </C.SideBarList>
         </C.Container>
     )

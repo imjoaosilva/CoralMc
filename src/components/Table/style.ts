@@ -14,7 +14,6 @@ export const TableHeader = styled.thead`
     color: white;
     height: 40px;
     width: 100%;
-
 `
 
 export const TableHeaderItem = styled.th`
@@ -32,19 +31,22 @@ export const TableBody = styled.tbody`
 export const TableBodyRow = styled.tr`
     background-color: #1F2A37;
     width: 100%;
+
+    
+    &:last-child {
+        td {
+            border-bottom: none;
+        }
+    }
+    
 `
 
 export const TableBodyItem = styled.td`
-    border-bottom: 2px solid #283241;
+    border-bottom: 0.5px solid rgba(38,48,62,0.1);
     height: 40px;
     font-family: 'Inter', sans-serif;
     padding: 0px 8px;
     font-size: 12px;
     color: #fff;
     opacity: 0.8;
-
-`
-
-export const TableBodyStatus = styled.div`
-
 `

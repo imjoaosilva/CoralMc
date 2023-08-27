@@ -5,7 +5,7 @@ interface BadgeProps {
 }
 
 export const Container = styled.div<BadgeProps>`
-    width: 110px;
+    width: 90px;
     height: 22px;
     display: flex;
     align-items: center;
@@ -14,6 +14,8 @@ export const Container = styled.div<BadgeProps>`
     gap: 5px;
     border-radius: 5px;
     padding: 5px;
+    text-wrap: wrap;
+    white-space: nowrap;
 
     p {
         color: ${props => props.color ?? '#374151'};
